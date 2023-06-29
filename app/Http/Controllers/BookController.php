@@ -97,6 +97,6 @@ class BookController extends Controller
         if (!auth()->user()->books->contains($book)) {
             abort(403);
         }
-        $book->category()->detach($category->id);
+        $book->categories()->detach($category->id);
     }
 }
