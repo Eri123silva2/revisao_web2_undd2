@@ -84,12 +84,12 @@ class BookController extends Controller
         $book->delete();
     }
 
-    public function addCategory(Request $request, Book $book, Category $cat)
+    public function addCategory(Request $request, Book $book, Category $category)
     {
         if (!auth()->user()->books->contains($book)) {
             abort(403);
         }
-        $book->categories()->attach($cat->id);
+        $book->categories()->attach($category->id);
     }
 
     public function removeCategory(Request $request, Book $book, Category $category)
