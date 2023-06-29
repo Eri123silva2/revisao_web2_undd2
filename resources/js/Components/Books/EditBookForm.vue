@@ -22,7 +22,7 @@ function close() {
 }
 
 function submit() {
-    form.put(route('Books.update', props.book.id), {
+    form.put(route('books.update', props.book.id), {
         onFinish: () => close(),
     });
 }
