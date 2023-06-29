@@ -14,7 +14,7 @@ function remove(category) {
 }
 
 function edit(category) {
-    const newName = prompt('Enter new category name', category.Name);
+    const newName = prompt('Enter new category name', category.name);
     if (!newName) return;
     
     const updateForm = useForm({
