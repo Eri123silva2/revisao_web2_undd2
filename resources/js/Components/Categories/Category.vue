@@ -9,7 +9,7 @@ defineProps({
 
 function remove(category) {
     if (confirm('Are you sure you want to delete this category?')) {
-        form.Delete(route('categories.destroy', category.id));
+        useForm({}).delete(route('categories.destroy', category.id));
     }
 }
 
