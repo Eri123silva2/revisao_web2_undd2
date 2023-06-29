@@ -15,7 +15,7 @@ const props = defineProps({
 
 function remove() {
     if (confirm('Are you sure you want to delete this book?')) {
-        useForm({}).delete(Route('books.destroy', props.book.id))
+        useForm({}).delete(route('books.destroy', props.book.id))
     } ``
 }
 

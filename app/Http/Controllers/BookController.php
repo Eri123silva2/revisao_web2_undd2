@@ -80,7 +80,7 @@ class BookController extends Controller
         if (!auth()->user()->books->contains($book)) {
             abort(403);
         }
-        $Book->delete();
+        $book->delete();
     }
 
     public function addCategory(Request $request, Book $book, Category $cat)
