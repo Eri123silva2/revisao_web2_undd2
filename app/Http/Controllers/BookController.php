@@ -36,6 +36,7 @@ class BookController extends Controller
         $book = Book::create([
             'title' => $request->title,
             'author' => $request->author,
+            'year' => $request->year,
             'user_id' => auth()->id(),
         ]);
 
