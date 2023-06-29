@@ -13,7 +13,7 @@ const props = defineProps({
 
 const form = useForm({
     'title': props.book.title,
-    'Author': props.book.author,
+    'author': props.book.author,
     'year': props.book.year,
 });
 
