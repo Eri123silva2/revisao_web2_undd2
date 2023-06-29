@@ -8,7 +8,7 @@ import PrimaryButton from '@/Components/PrimaryButton.vue';
 const showAddForm = ref(false);
 
 const form = useForm({
-    'Name': '',
+    'name': '',
 });
 
 function submit() {
