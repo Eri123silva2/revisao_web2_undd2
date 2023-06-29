@@ -9,7 +9,10 @@ const props = defineProps({
     categories: Array,
 });
 
+
 </script>
+
+
 
 <template>
     <Head title="Books" />

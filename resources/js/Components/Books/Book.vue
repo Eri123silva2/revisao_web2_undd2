@@ -4,6 +4,8 @@ import SecondaryButton from '@/Components/SecondaryButton.vue'
 import { ref, computed } from 'vue'
 import { useForm } from '@inertiajs/vue3';
 
+const showEditForm = ref(false)
+
 const showAllCategories = ref(false)
 
 const props = defineProps({
