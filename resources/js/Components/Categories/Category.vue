@@ -1,4 +1,8 @@
 <script setup>
+
+import { useForm } from '@inertiajs/vue3';
+
+
 defineProps({
     'category': Object
 })
@@ -17,7 +21,7 @@ function edit(category) {
         'name': newName
     })
 
-    updateForm.put(route('categories.edit', category.id), {
+    updateForm.put(route('categories.update', category.id), {
     });
 }
 </script>
