@@ -3,6 +3,8 @@ import PrimaryButton from '@/Components/PrimaryButton.vue';
 import { useForm } from '@inertiajs/vue3';
 import { ref } from 'vue';
 
+import TextInput from '@/Components/TextInput.vue';
+
 defineProps({
     categories: Array,
 })
