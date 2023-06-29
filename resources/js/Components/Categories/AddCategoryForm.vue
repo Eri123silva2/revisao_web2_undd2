@@ -14,7 +14,7 @@ const form = useForm({
 function submit() {
     form.post(route('categories.store'), {
         onFinish: () => {
-            form.Name = '';
+            form.name = '';
             showAddForm.value = false;
         },
     });
