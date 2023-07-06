@@ -41,6 +41,7 @@ class BookController extends Controller
         ]);
 
         $book->categories()->attach($request->categories_id);
+        //substituir category por categories_id isso acontece pq tem uma tabela intermidiaria que o nome da coluna é esse (eu acho)
     }
 
     /**
