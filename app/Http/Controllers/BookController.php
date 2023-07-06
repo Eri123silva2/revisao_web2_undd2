@@ -40,7 +40,7 @@ class BookController extends Controller
             'user_id' => auth()->id(),
         ]);
 
-        $book->categories()->attach($request->category);
+        $book->categories()->attach($request->categories_id);
     }
 
     /**
